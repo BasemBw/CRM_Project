@@ -16,7 +16,6 @@ const App = inject("clients")(observer((props) => {
           <Route path="/" element={<Container/>} />
           <Route path="/Actions" element={<Actions/>} />
           <Route path="/Aanalytics" element={<Aanalytics/>} />
-  
         </Routes>
       </div>
     </Router>
