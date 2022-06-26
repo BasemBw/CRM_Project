@@ -4,7 +4,6 @@
 .topnav {
   background-color: #333;
   overflow: hidden;
-  margin: 10px;
   border-radius: 5px;
 }
 .topnav a {
@@ -24,4 +23,52 @@
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
+}
+.ActionsDiv{
+  display: grid;
+}
+.UpdateDiv{
+  justify-self: left;
+  display: inline;
+  border-bottom: 1px solid black;
+}
+.ClientNameInput{
+  border: hidden;
+  border-bottom-style: groove;
+}
+.Texts{
+  margin-right: 20px;
+}
+div{
+  margin: 20px;
+}
+.AddDiv{
+  justify-self: left;
+  display: grid;
+}
+.updateMainDiv{
+  justify-self: left;
+}
+
+
+.updateMainDiv div {
+  text-align: left;
+}
+
+.AddClient div{
+  text-align: left;
+}
+
+.AddClient span{
+  margin-right: 20px;
+  width: 50px;
+}
+
+.AddInput{
+  border: hidden;
+  border-bottom-style:outset;
+}
+
+.Buttons{
+  border: solid;
 }
