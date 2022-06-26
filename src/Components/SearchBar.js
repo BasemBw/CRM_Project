@@ -3,8 +3,8 @@ import React from 'react'
 function SearchBar() {
   return (
     <div>
-        <input placeholder='Search'></input>
-        <select name="cars" id="cars">
+        <input placeholder='Search' className={`Search-input`}></input>
+        <select className={`drop-down-list`}>
         <option value="Name">Name</option>
         </select>
     </div>

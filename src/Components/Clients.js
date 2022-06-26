@@ -1,21 +1,20 @@
 import React from 'react'
 import SearchBar from './SearchBar'
-
-function Clients() {
+import { observer, inject } from 'mobx-react'
+import Client from './Client'
+import GridHeader from './GridHeader'
+const Clients = inject(`clients`)(observer(props => {
+  const clientsArray = props.clients.clients.splice(0,10)
   return (
+    
     <div className='container'>
       <SearchBar/>
-      <div className='grid' >
-          <span>Name</span>
-          <span>Surname</span>
-          <span>Country</span>
-          <span>First Contact</span>
-          <span>Email</span>
-          <span>Sold</span>
-          <span>Owner</span>
+      <div className={`grid`} >
+        <GridHeader/> 
+        {clientsArray.map(client =><Client client = {client} />)}
       </div>
     </div>
   )
-}
+}))
 
 export default Clients
