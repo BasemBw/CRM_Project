@@ -5,8 +5,8 @@ function Navbar() {
   return (
         <div className='topnav'>
                <Link  to="/"><h3>Home</h3></Link>
-               <Link  to="/Search"><h3>Search</h3></Link>
-               <Link  to="/Favorites"><h3>Favorites</h3></Link>
+               <Link  to="/Actions"><h3>Actions</h3></Link>
+               <Link  to="/Aanalytics"><h3>Aanalytics</h3></Link>
         </div>
   )
 }
