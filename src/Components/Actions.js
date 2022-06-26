@@ -6,12 +6,14 @@ import AddClient from './AddClient';
 const Actions = inject("clients")(observer((props) => {
   return (
     <div className='ActionsDiv'>
+
        <div className='UpdateDiv'>
-               <Update />
+          <Update />
        </div>
        <div className='AddDiv'>
-              <AddClient />
+          <AddClient />
        </div>
+       
     </div>
   );
 }))

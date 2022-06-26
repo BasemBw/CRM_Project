@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 .topnav {
   background-color: #333;
   overflow: hidden;
@@ -23,6 +21,25 @@
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
+}
+.Client {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-bottom: solid black 1px;
+  row-gap: 10px;
+  align-items: center;
+  padding-left: 0.5vw;
+}
+.client-div {
+  padding-bottom: 0.7vw;
+}
+.grid {
+  display: grid;
+  row-gap: 0.5vh;
+}
+
+.container {
+  padding-left: 10px;
 }
 .ActionsDiv{
   display: grid;
@@ -72,3 +89,22 @@ div{
 .Buttons{
   border: solid;
 }
+
+.header {
+  background-color: #F7CE3E;
+  box-shadow: 1px 1px black;
+  height: 5vh;
+}
+
+.Search-input {
+  border: none;
+  border-bottom: 1px solid black;
+  margin-left: 1.2vw;
+}
+
+.drop-down-list {
+  margin-left: 2vw;
+  border: none;
+  border-bottom: 1px solid black ;
+}
+
