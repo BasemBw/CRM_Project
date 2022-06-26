@@ -4,8 +4,10 @@ import Navbar from './Components/Navbar';
 import  Container  from './Components/Container';
 import Actions from './Components/Actions'
 import Aanalytics from './Components/Aanalytics'
+import { observer, inject } from 'mobx-react'
 
-function App() {
+
+const App = inject("clients")(observer((props) => {
   return (
     <Router>
       <div className="App">
@@ -19,6 +21,6 @@ function App() {
       </div>
     </Router>
   );
-}
+}))
 
 export default App;

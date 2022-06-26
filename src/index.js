@@ -8,11 +8,14 @@ import reportWebVitals from './reportWebVitals';
 import {clients as Clients } from './Stores/Clients'
 
 const clients = new Clients()
-clients.getClients()
+
+const store = {
+  clients
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Provider>
+  <Provider  {...store}>
     <App />
   </Provider>,
 );
