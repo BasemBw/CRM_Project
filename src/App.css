@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 .topnav {
   background-color: #333;
   overflow: hidden;
@@ -24,4 +22,11 @@
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.container {
+  padding-left: 10px;
 }
